@@ -137,7 +137,7 @@ h1 {
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
-font-size: 45px;
+font-size: 3vw;
 /* line-height: 85px; */
 }
 
@@ -146,7 +146,7 @@ font-size: 45px;
     display: flex;
     /* justify-content: center; */
     text-align: center;
-    margin-left: ;
+    /* margin-left: ; */
 }
 
 .circle {
@@ -179,7 +179,7 @@ font-size: 45px;
 }
 
 .button_green:hover,
-.button_orange {
+.button_orange:hover {
 
 }
 
@@ -207,6 +207,23 @@ font-size: 45px;
    background-color: rgba(0, 0, 0, .5);
    z-index: 20;
    transition: .3s all;
+}
+.popap__message {
+  position: absolute;
+  opacity: 0;
+   visibility: hidden;
+  background-color: black;
+  width: 10vw;
+  height: 2vw;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+
+}
+.message {
+    
+    color: #fff;  
 }
 
 
@@ -248,11 +265,15 @@ font-size: 45px;
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
-.overlay.active{
+.overlay.active {
    opacity: 1;
    visibility: visible;
 }
 
+.popap__message.active {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* Стили для кнопки закрытия */
 
@@ -337,6 +358,7 @@ header {
 
 /* Гамбургер иконка */
 .menu-btn {
+    display: none;
 	width: 30px;
 	height: 30px;
 	position: relative;
@@ -351,7 +373,7 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* background-color: #222222; */
+	background-color: #222222;
 	transition: all 0.5s;
 }
 
