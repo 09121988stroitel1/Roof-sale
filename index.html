@@ -20,13 +20,13 @@
             </div>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__link"><a href="">Каталог</a></li>
-                    <li class="navigation__link"><a href="">Преимущества</a></li>
-                    <li class="navigation__link"><a href="">Примеры работ</a></li>
-                    <li class="navigation__link"><a href="">Монтаж</a></li>
-                    <li class="navigation__link"><a href="">Отзывы</a></li>
-                    <li class="navigation__link"><a href="">Ответы на вопросы</a></li>
-                    <li class="navigation__link"><a href="">Контакты</a></li>
+                    <li class="navigation__link"><a href="">КАТАЛОГ</a></li>
+                    <li class="navigation__link"><a href="">ПРЕИМУЩЕСТВА</a></li>
+                    <li class="navigation__link"><a href="">ПРИМЕРЫ РАБОТ</a></li>
+                    <li class="navigation__link"><a href="">МОНТАЖ</a></li>
+                    <li class="navigation__link"><a href="">ОТЗЫВЫ</a></li>
+                    <li class="navigation__link"><a href="">ОТВЕТЫ НА ВОПРОСЫ</a></li>
+                    <li class="navigation__link"><a href="">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,12 +35,14 @@
         <div class="wrapper main__wrapper">
             <div class="information">
                 <div class="information__description">
-                    <p>Кровельные и фасадные <br>
-                        материалы в Тюмени и области</p>
-                    <p>Профессиональный монтаж с 2010 года</p>
+                    <p class="information__text"><b>Кровельные и фасадные <br>
+                        материалы</b> в Тюмени и области</p>
+                    <p>Профессиональный монтаж<br>
+                         с 2010 года</p>
                 </div>
                 <div class="information__price">
-                    <img src="./icon/Pdf.svg" alt="">
+                    <!-- <img class="icon__pdf" src="./icon/Круг.svg" alt=""> -->
+                    <img class="icon__pdf" src="./icon/Pdf.svg" alt="">
                     <a href="#">Скачать прайс</a>
                 </div>
                 <div class="information__logo">
@@ -53,11 +55,14 @@
                     <img class="image__answers" src="./icon/Круг.png" alt="">
                 </div>
                 <div class="information__worktime">
-                    <p>Пн-Пт 9:00 до 18:00, Сб 10:00 до 18:00</p>
-                    <a href="tel: +13 674 567 75 54">
-                        <h4 class="contacts-phone">+13 674 567 75 54</h4>
+                    <p><b>Пн-Пт</b> 9:00 до 18:00, <b>Сб</b> 10:00 до 18:00</p>
+                    <a href="tel: 8 (800) 222-54-60">
+                        <h4 class="contacts-phone">8 (800) 222-54-60</h4>
                     </a>
-                    <p>Позвони мне</p>
+                    <a href="tel: 8 (800) 222-54-60">
+                        <p>Позвони мне</p>
+                    </a>
+                    
                 </div>
             </div>
             <div class="content">
@@ -86,13 +91,20 @@
                         <strong>материалов</strong> в Тюмени <br>
                         и Тюменьской области
                     </h1>
-                    <img src="./icon/Rectangle 2.svg" alt="">
+                    <div class="content__circle">
+                    <img class="circle" src="./icon/Rectangle 2.svg" alt="">
+                    <img class="circle" src="./icon/Rectangle 2.svg" alt="">
+                    <img class="circle" src="./icon/Rectangle 2.svg" alt="">
+                    <img class="circle" src="./icon/Rectangle 2.svg" alt="">
                     <h4>и монтаж под ключ</h4>
+                </div>
                     <div class="button__container">
-                        <button class="button_green">Рассчитать стоимость материалов и монтаж &uarr;</button>
-                        <button class="button_orange">Записаться на просмотр объектов &uarr;</button>
+                        <button class="button_green">Рассчитать стоимость <br>
+                             материалов и монтаж &uarr;</button>
+                        <button class="button_orange">Записаться на <br>
+                             просмотр объектов &uarr;</button>
                     </div>
-                    <p>Ответьте на несколько <br>
+                    <p class="content__questions">Ответьте на несколько <br>
                         вопросов и получите сметную <br>
                         стоимость и 3 подарка за <br>
                         экономию нашего времени
@@ -101,7 +113,7 @@
             </div>
         </div>
         
-        //Popap
+        <!-- //Popap -->
         <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
 <div class="modal" data-modal="1">
      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
@@ -120,10 +132,10 @@
    <p class="modal__title">Собщение отправлено</p>
 </div>
 <div class="overlay js-overlay-modal"></div>
-       //Пульсация
+       <!-- Пульсация -->
         	<div class="pulse"></div>
         
-        //BURGER MENU
+        <!-- BURGER MENU -->
         <header>
 	<div class="menu-btn">
 		<span></span>
@@ -175,42 +187,8 @@
         
         
     </main>
-    
-    //Script popap
-    <script>const button = document.querySelector('.js-open-modal')
-const modalElem = document.querySelector('.modal');
-const overlay = document.querySelector('.js-overlay-modal');
-const closeButton = document.querySelector('.modal__cross');
-const input = document.querySelector('.checkbox');
-const buttonToSend = document.querySelector('.button__to-send');
-// buttonToSend.setAttribute("disabled", "true")
-button.addEventListener('click', function(e) {
-    modalElem.classList.add('active');
-         overlay.classList.add('active');
-});
-closeButton.addEventListener('click', function(e) {
-   modalElem.classList.remove('active');
-        overlay.classList.remove('active');
-      });
- overlay.addEventListener('click', function() {
-        document.querySelector('.modal.active').classList.remove('active');
-         overlay.classList.remove('active');
-    });
-     input.addEventListener('change', () => {
-                 if(input.checked) {
-                   buttonToSend.disabled = false        
-                } 
-         })   </script>
-    
-     //BURGER MENU
-    
-       <script>let menuBtn = document.querySelector('.menu-btn');
-let menu = document.querySelector('.menu');
-
-menuBtn.addEventListener('click', function(){
-	menuBtn.classList.toggle('active');
-	menu.classList.toggle('active');
-})</script>
+    <div class="overlay js-overlay-modal"></div>
+   <script src="./script.js"></script>
 </body>
 
 </html>

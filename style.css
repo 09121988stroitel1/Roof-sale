@@ -15,13 +15,14 @@ body {
 p, 
 a {
     font-size: 14px;
+    color: black;
 }
 li {
     list-style-type: none; 
 }
 a {
     text-decoration: none;
-    text-transform: uppercase
+ 
 }
 .wrapper {
     margin: 0 auto;
@@ -48,15 +49,48 @@ width: 22px;
     justify-content: space-around;
     border: red solid 2px;
 }
+
 .main {
     height: 91vh;
 }
+
 .information {
     height: 14vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: red solid 2px;
+}
+
+.information__description,
+.information__worktime {
+    border: red solid 2px;
+    text-align: center;
+}
+
+.information__text {
+    padding-bottom: 10px;
+}
+
+.information__worktime {
+height: 80px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+
+}
+
+.icon__pdf {
+    /* position: absolute;
+    left: 25.57%;
+    right: 72.14%;
+    top: 14.26%;
+    bottom: 81.68%; */
+    
+    background: red;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 100px; 
 }
 .information__logo {
     width: 10vw;
@@ -84,18 +118,79 @@ width: 22px;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    width: 12vw;
 }
 
 .content__basic {
     border: red solid 2px;
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+   
 }
+
 h1 {
-    font-weight: normal;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 45px;
+/* line-height: 85px; */
+}
+
+.content__circle {
+    border: red solid 2px;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    margin-left: ;
+}
+
+.circle {
+    /* border: red solid 2px; */
+    /* width: 6px;
+    margin: 3px; */
+    /* height: 5px; */
+}
+.button__container {
+    border: red solid 2px;
+    display: flex;
+     justify-content: space-between;
+}
+
+.button_green {
+    border-radius: 50px;
+    width: 19vw;
+    height: 100px;
+    color: #fff;
+    background: green;
+    font-size: 14px;
+}
+.button_orange {
+    border-radius: 50px;
+    width: 17vw;
+    height: 100px;
+    color: #fff;
+    font-size: 14px;
+    background: orange;
+}
+
+.button_green:hover,
+.button_orange {
+
+}
+
+.content__questions{
+    border: red solid 2px;
 }
 
 
 
-//Popap
+
+/* Popap */
 /* Стили для подложки */
 
 .overlay {
@@ -167,14 +262,14 @@ h1 {
    position: absolute;
    top: 20px;
    right: 20px;
-   fill: #444;
+   /* fill: #444; */
    cursor: pointer;
 }
 
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-a {
+/* a {
    padding: 20px;
    display: inline-block;
    text-decoration: none;
@@ -182,8 +277,12 @@ a {
    margin: 10px;
    color: #fff;
    border-radius: 3px;
-}
-//Пульсация
+} */
+
+
+
+
+/* Пульсация */
 .pulse {
 	margin:100px;
 	display: block;
@@ -228,7 +327,7 @@ a {
 }
 
 
-//Burger menu
+/* Burger menu */
 
 header {
 	display: flex;
@@ -252,7 +351,7 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #222222;
+	/* background-color: #222222; */
 	transition: all 0.5s;
 }
 
@@ -284,7 +383,7 @@ header {
 	width: 30%;
 	height: 100%;
 	padding: 15px;
-  background: #FFEFBA;
+   /* background: #FFEFBA; */
 	transform: translateX(100%);
 	transition: transform 0.5s; 
 }
