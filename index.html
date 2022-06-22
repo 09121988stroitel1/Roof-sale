@@ -41,7 +41,6 @@
                          с 2010 года</p>
                 </div>
                 <div class="information__price">
-                    <!-- <img class="icon__pdf" src="./icon/Круг.svg" alt=""> -->
                     <img class="icon__pdf" src="./icon/Pdf.svg" alt="">
                     <a href="#">Скачать прайс</a>
                 </div>
@@ -49,10 +48,12 @@
                     <img class="information__img" src="./image/Логотип.png" alt="LOGO">
                 </div>
                 <div class="information__answers">
-                    <li>Отвечаем онлайн</li>
-                    <img class="image__answers" src="./icon/Vector1.svg" alt="">
-                    <img class="image__answers" src="./icon/Icon_1_.svg" alt="">
-                    <img class="image__answers" src="./icon/Круг.png" alt="">
+                    <li>Отвечаем <b>онлайн</b></li>
+                    <div class="icon__mesenger">
+                    <div class="viber"><img class="image__answers" src="./icon/icon3.svg" alt=""></div>
+                    <div class="watsap"><img class="image__answers" src="./icon/Icon_2.svg" alt=""></div>
+                    <div class="telegram"><img class="image__answers" src="./icon/Vector33.svg" alt=""></div>
+                     </div>
                 </div>
                 <div class="information__worktime">
                     <p><b>Пн-Пт</b> 9:00 до 18:00, <b>Сб</b> 10:00 до 18:00</p>
@@ -104,33 +105,42 @@
                         <button class="button_orange">Записаться на <br>
                              просмотр объектов &uarr;</button>
                     </div>
-                    <p class="content__questions">Ответьте на несколько <br>
-                        вопросов и получите сметную <br>
-                        стоимость и 3 подарка за <br>
-                        экономию нашего времени
-                    </p>
+                    <div class="content__arm_questions">
+                        <div class="arm__armImpuls"><img class="armImpuls" src="./icon/armImpuls.svg" alt="">
+                            <img class="arm" src="./icon/arm.svg" alt="">
+                        </div>
+                        
+                        <p class="content__questions"><b>Ответьте на несколько</b><br>
+                           <b> вопросов и получите</b> сметную <br>
+                            стоимость и 3 подарка за <br>
+                            экономию нашего времени
+                        </p>
+                    </div>
+                   
                 </div>
             </div>
         </div>
         
         <!-- //Popap -->
 <div class="modal" data-modal="1">
-     <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-   <h3>Быстро оставить заявку</h3>
-    <p class="modal__title">Введите номер, мы позвоним вам<br> течение 10 минут в рабочее время</p>
-   <p class="modal__title">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
-   <p class="modal__title">Введите номер телефона</p>
-   <input type = "text" name = "lastname" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _">
+     <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <h2>Быстро <br> оставить заявку</h2>
+    <p class="modal__title">Введите номер, мы позвоним вам<br>
+         течение 10 минут в рабочее время</p>
+   <p class="working__hours">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+   <p class="telephone">Введите номер телефона</p>
+   <input class="number" type = "text" name = "lastname" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _">
    <input class="button__to-send" type="button" value="Позвоните мне 	&#8594;" disabled>
-     <input class="checkbox" type="checkbox" id="checkbox" name="horns">
-    <label for="horns">Нажимая кнопку вы соглашаетесь  с условиями<br><span class="colortext">Политики конфиденциальности</span></label>
-</div>
+   <div class="checkbox__confirmation">
+        <input class="checkbox" type="checkbox" id="checkbox" name="horns">
+    <label for="horns">Нажимая кнопку вы соглашаетесь  с условиями<br><span class="colortext">Политики конфиденциальности</span></label></div>
+   </div>
 <div class="popap__message">
    <p class="message">Собщение отправлено</p>
 </div>
 
        <!-- Пульсация -->
-        	<!-- <div class="pulse"></div> -->
+        	 <div class="pulse"></div>
         
         <!-- BURGER MENU -->
         <header>

@@ -40,8 +40,7 @@ overlay.addEventListener('click', function() {
     // function setTime() {
     //   popapMessage.classList.remove('active')
     // };
-    setTimeout(function() {
-      popapMessage.classList.remove('active')}, 1000);
+    setTimeout(function() {popapMessage.classList.remove('.active')}, 1000);
     // window.setTimeout(setTime(), 1000);
 
  //BURGER MENU 
