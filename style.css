@@ -5,49 +5,50 @@
 }
 
 body {
-  
     width: 100vw;
     height: 100vh;
     background: url(./image/BG.png) 100% 100% no-repeat; 
     background-size: cover; 
-  
-}
+  }
+
 p, 
 a {
     font-size: 1vw;
     color: black;
 }
+
 li {
     list-style-type: none; 
 }
+
 a {
     text-decoration: none;
- 
 }
+
 .wrapper {
     margin: 0 auto;
     width: 82vw;
-    height: 100%;
-    
+    height: 100%;  
 }
+
 .header {
     height: 9vh;
 }
+
 .header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
+}
 
-    
-}
 .header__logo-line {
-width: 22px;
+    width: 22px;
 }
+
 .navigation {
     width: 82vw;
     display: flex;
-    justify-content: space-around;
-   
+    justify-content: space-around; 
 }
 
 .main {
@@ -58,13 +59,11 @@ width: 22px;
     height: 14vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-  
+    align-items: center; 
 }
 
 .information__description,
-.information__worktime {
-   
+.information__worktime {  
     text-align: center;
 }
 
@@ -78,11 +77,9 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 text-align: center;
-
 }
 
 .information__answers {
-   
     text-align: center; 
 }
 
@@ -90,15 +87,13 @@ text-align: center;
     display: flex;
     justify-content: space-around;
     width: 12vw;
-    height: 6vh;
-    
+    height: 6vh;  
 }
+
 .viber {
     background: #976FCC;
     border-radius: 50%;
-    width: 3vw;
-    /* height: 5.5vh; */
-    
+    width: 3vw;    
     text-align: center; 
     padding: 0.5vw;
 }
@@ -108,55 +103,39 @@ text-align: center;
     border-radius: 50%;
     width: 3vw;
     height: 5.5vh;
-   
     text-align: center; 
     padding: 0.5vw;
 }
+
 .telegram {
     background: #05A0EB;
     border-radius: 50%;
-    /* width: 3vw; */
     height: 5.5vh;
-    
     text-align: center; 
     padding: 0.7vw;
 }
 
 .icon__pdf {
-    /* position: absolute;
-    left: 25.57%;
-    right: 72.14%;
-    top: 14.26%;
-    bottom: 81.68%; */
-    /* width: 3vw; */
-    
-    /* background: red; */
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
     border-radius: 100px; 
 }
+
 .information__logo {
     width: 10vw;
-  
-
 }
+
 .information__img {
     width: 100%;
 }
-/* .image__answers {
-   
-    width: 1vw;
-   
-} */
+
 .content {
     width: 53vw;
     height: 58vh;
-   
     display: flex;
     justify-content: space-around;
 }
 
 .content__form {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -167,13 +146,11 @@ text-align: center;
 }
 
 .content__basic {
-    
     width: 38vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
-   
+    text-align: center;   
 }
 
 h1 {
@@ -181,32 +158,27 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
 font-size: 3vw;
-/* line-height: 85px; */
 }
+
 h4 {
     font-size: 2vw;
     font-weight: normal;
 }
 
-.content__circle {
-   
+.content__circle {   
     display: flex;
     justify-content: center;
     text-align: center;
     width: 28vw;
-    /* margin-left: ; */
 }
 
 .circle {
-    /* border: red solid 2px; */
     width: 0.7vw;
-    /* margin: 3px; */
-    /* height: 5px; */
     padding-top: 0.5vw;
     padding-right: 0.3vw;
 }
+
 .button__container {
-    
     display: flex;
      justify-content: space-between;
 }
@@ -220,6 +192,7 @@ h4 {
     font-size: 14px;
     border: 0;
 }
+
 .button_orange {
     border-radius: 50px;
     width: 17vw;
@@ -230,17 +203,15 @@ h4 {
     border: 0;
 }
 
-
 .button_orange:hover {
     box-shadow: 3px 3px orange, -1em 0 .4em orange
 }
+
 .button_green:hover {
     box-shadow: 3px 3px green, -1em 0 .4em green 
 }
 
-.content__arm_questions {
-    
- 
+.content__arm_questions {  
     display: flex;
     justify-content: space-around;
     width: 18vw;
@@ -257,24 +228,15 @@ h4 {
 }
 
 .content__questions{
-  
- 
     width: 14vw;
- 
 }
-
-
 
 
 /* Popap */
 
-
-.overlay {
-   
-   
+.overlay {  
    opacity: 0;
-   visibility: hidden;
-   
+   visibility: hidden; 
    position: fixed;
    top: 0;
    left: 0;
@@ -284,6 +246,7 @@ h4 {
    z-index: 20;
    transition: .3s all;
 }
+
 .popap__message {
   position: absolute;
   opacity: 0;
@@ -296,32 +259,26 @@ h4 {
   left: 45%;
   padding-top: 1vw;
   text-align: center;
-
 }
+
 .message {
     font-size: 2vw;
     color: #fff;  
 }
 
-
 /* Стили для модальных окон */
 
-.modal {
-   
+.modal { 
    opacity: 0;
-   visibility: hidden; 
-     
+   visibility: hidden;  
    width: 28vw;
-   /* max-width: 550px; */
    height: 34vw;
    border-radius: 50px;
-      
    position: fixed;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   z-index: 30; 
-     
+   z-index: 30;   
    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
    text-align: center;
    padding: 30px;
@@ -331,20 +288,14 @@ h4 {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-   align-items: center;
-   
+   align-items: center;   
 }
 
-
-
-.modal__title {
-    
+.modal__title {   
     font-size: 1.3vw;
 }
 
-
-.number {
-    
+.number {   
     border-radius: 3vw;
     height: 5vw;
     width: 22vw;
@@ -362,7 +313,6 @@ h4 {
 .colortext {
    color: orange;
 }
-
 
 /* Стили для активных классов подложки и окна */
 
@@ -387,9 +337,7 @@ h4 {
    right: 20px;
    fill: #A0A0A0;
    cursor: pointer;
- 
 }
-
 
 /* Burger menu */
 
@@ -398,8 +346,8 @@ header {
 	justify-content: flex-end;
 }
 
-
 /* Гамбургер иконка */
+
 .menu-btn {
     display: none;
 	width: 30px;
@@ -423,24 +371,29 @@ header {
 .menu-btn span:nth-of-type(2) {
 	top: calc(50% - 5px);
 }
+
 .menu-btn span:nth-of-type(3) {
 	top: calc(50% + 5px);
 }
 
 /* Меняем гамбургер иконку, когда меню открыто */
+
 .menu-btn.active span:nth-of-type(1) {
   display: none;
 }
+
 .menu-btn.active span:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);  
 }
+
 .menu-btn.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg); 
 }
 
 /* Меню, которое будет появляться */
+
 .menu {
 	position: fixed;
 	top: 0;
@@ -448,7 +401,7 @@ header {
 	width: 100%;
 	height: 100%;
 	padding: 15px;
-   background: #EDF2F5;
+        background: #EDF2F5;
 	transform: translateX(100%);
 	transition: transform 0.5s; 
 }
@@ -463,7 +416,6 @@ header {
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
 
     .header,
     .information__description,
@@ -481,9 +433,7 @@ header {
 
     .information__worktime {
         width: 150px;
-      
         font-size: 14px;
-     
         position: absolute;
         top: 2px;
         left: 105px;
@@ -500,14 +450,13 @@ header {
         display: block;
         top: 5px;
     }
+	
     .content__form {
         position: absolute;
         top: 550px;
         left:15%;
         width: 225px;
-        height: 367px;
-    
-        
+        height: 367px;     
     }
 
     .content__basic {
@@ -515,13 +464,10 @@ header {
         width: 276px;
         height: 324px;
         top: 100px;
-        left: 20px;
-        
-       
+        left: 20px; 
     }
     
-    h1 {
-       
+    h1 { 
         position: absolute;
         top: 0;
         width: 275px;
@@ -529,37 +475,31 @@ header {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-   
+    font-size: 18px;  
     }
+	
     h4 {
         font-size: 16px;
-        font-weight: normal;
-      
+        font-weight: normal; 
     }
-    
-    
-    .content__circle {
-       
-       
+     
+    .content__circle {   
         position: absolute;
         top: 95px;
         width: 275px;
         height: 18px;
     }
     
-    .circle {
-       
+    .circle { 
         width:4vw;
-     
         padding-top: 2vw;
         padding-right: 1vw;
     }
+	
     .button__container {
         display: block;
         position: absolute;
         top: 205px;
-     
         height: 130px;
     }
     
@@ -573,6 +513,7 @@ header {
         border: 0;
         margin-bottom: 5px;
     }
+	
     .button_orange {
         border-radius: 50px;
         width: 276px;
@@ -582,13 +523,10 @@ header {
         background: orange;
         border: 0;
     } 
-  
     
     .content__arm_questions {
      position: absolute;
-     /* left: 80px; */
      top: 117px;
-    
      width: 275px;
     }
     
@@ -606,16 +544,13 @@ header {
     
     .content__questions{
       font-size: 12px;
-     
         width: 275px;
         position: absolute;
-       
         top: 25px;
-     
     }
 
-
     /* Пульсация */
+	
 .pulse {
     z-index: 200;
     border: red solid 2px;
@@ -664,7 +599,6 @@ header {
 	}
 }
 
-.information__logo 
 
 
 }
