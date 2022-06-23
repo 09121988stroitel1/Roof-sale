@@ -7,7 +7,7 @@ const input = document.querySelector('.checkbox');
 const buttonToSend = document.querySelector('.button__to-send');
 const popapMessage = document.querySelector('.popap__message');
 
-// buttonToSend.setAttribute("disabled", "true")
+
 button.addEventListener('click', function(e) {
 modalElem.classList.add('active');
      overlay.classList.add('active');
@@ -27,21 +27,14 @@ overlay.addEventListener('click', function() {
                 buttonToSend.disabled = true 
             }
      })  
-    //  function setTime() {
-      buttonToSend.addEventListener('click', function(e) {
-       popapMessage.classList.add('active');
-       modalElem.classList.remove('active');
-    overlay.classList.remove('active');
-        }); 
-
-
-        // setTimeout(function() { alert('Привет') }, 1000);
-    //  }
-    // function setTime() {
-    //   popapMessage.classList.remove('active')
-    // };
-    setTimeout(function() {popapMessage.classList.remove('.active')}, 1000);
-    // window.setTimeout(setTime(), 1000);
+ //  function setTime() {
+buttonToSend.addEventListener('click', function(e) 
+popapMessage.classList.add('active');
+modalElem.classList.remove('active');
+overlay.classList.remove('active');
+}); 
+  setTimeout(function() {popapMessage.classList.remove('.active')}, 1000);
+   
 
  //BURGER MENU 
 
